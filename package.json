@@ -1,0 +1,15 @@
+{
+  "name": "node-express-app",
+  "version": "1.0.0",
+  "description": "Npdejs Express Example",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index"
+  },
+  "author": "R. O. Olanrewaju",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
+}
