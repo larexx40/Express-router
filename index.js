@@ -4,6 +4,8 @@ const morgan = require('morgan')
 const bordyParser = require('body-parser')
 
 const dishRouter = require('./routes/dishRouter')
+const leaderRouter = require('./routes/leaderRouter')
+const promoRouter = require('./routes/promoRouter')
 
 const hostname = 'localhost'
 const port = 3000
@@ -13,6 +15,8 @@ app.use(morgan('dev'))
 app.use(bordyParser.json())
 
 app.use('/dishes', dishRouter)
+app.use('/leader', leaderRouter)
+app.use('/promo', promoRouter)
 
 // to display static file in folder public
 app.use(express.static(__dirname+ '/public'))
