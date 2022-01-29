@@ -14,11 +14,10 @@ app.use(bordyParser.json())
 
 app.use('/dishes', dishRouter)
 
-// for Server CRUD operation
-
-  
-
+// to display static file in folder public
 app.use(express.static(__dirname+ '/public'))
+
+//if failed to display the file
 app.use((req, res, next) => {
     console.log(req.headers)
     res.statusCode = 200
